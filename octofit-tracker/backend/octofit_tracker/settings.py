@@ -1,4 +1,3 @@
-
 """
 Django settings for octofit_tracker project.
 
@@ -26,7 +25,7 @@ SECRET_KEY = "django-insecure-!sy#b=0j-p)(w!e+vmbi*gw4^_vlqquzl&m(i_4@#3zsq1&*d=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
 
 
 # Application definition
@@ -43,8 +42,6 @@ INSTALLED_APPS = [
     "corsheaders",
     "octofit_tracker",
 ]
-
-INSTALLED_APPS += ['corsheaders']
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
